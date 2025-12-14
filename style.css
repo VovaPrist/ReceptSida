@@ -10,6 +10,9 @@ body{
     margin-top: 5vh;
     margin-bottom: 5vh;
     border-radius: 40px;
+    display:grid;
+    grid-template-rows: auto 1fr;
+    gap: 2rem;
 }
 .title-div{
     display: flex;
@@ -30,6 +33,13 @@ header{
 }
 h1{
     font-size: 5vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+h1:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+    letter-spacing: 10px;
 }
 nav{
     width: 100%;
@@ -39,11 +49,14 @@ nav{
 a{
     border-radius: 5px;
     border: 2px solid rgba(0, 0, 0, 0.456);
+    font-family: Arial, Helvetica, sans-serif;
 }
 .main{
     margin-left: 2vw;
     margin-right: 2vw;
     margin-top: 2vw;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 ::selection {
   background: orange;
@@ -63,6 +76,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    grid-row: 1;
 }
 .ing1{
     height: 30vw;
@@ -71,4 +85,27 @@ ul{
 .ing2{
     height: 30vw;
     border-radius: 20px;
+}
+img{
+    transition:cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.3s;
+}
+img:hover{
+    transform: scale(1.05)
+}
+li {
+    background-color: hwb(0 100% 0% / 0.733);
+    margin: 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.instruktioner{
+    margin: 40px;
+    grid-row: 2;
+}
+input{
+    height: 20px;
+    width: 20px;
 }
